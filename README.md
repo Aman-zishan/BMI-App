@@ -5,5 +5,5 @@
   <img height="25%" width="25%" src="1.jpg">
   <img height="25%" width="25%" src="2.jpg">
 </p>
-[click here to download APK](https://github.com/Aman-zishan/BMI-App/blob/master/BMI%20app.apk)
+[click here to download APK](https://github.com/Aman-zishan/PickUP/raw/master/app-armeabi-v7a-release.apk)
 reference:https://fidev.io/bmi-calculator/

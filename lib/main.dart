@@ -1,9 +1,20 @@
-import 'package:bmi_app/input_page.dart';
+import 'package:bmi_app/input_page/input_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'styles.dart';
+
 void main() {
+
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setSystemUIOverlayStyle(
+    SystemUiOverlayStyle(
+      statusBarColor: Colors.white, //top bar color
+      statusBarIconBrightness: Brightness.dark, //top bar icons
+      systemNavigationBarColor: Colors.white, //bottom bar color
+      systemNavigationBarIconBrightness: Brightness.dark, //bottom bar icons
+    )
+  );
   SystemChrome.setPreferredOrientations(
           [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown])
       .then((_) => runApp(new MyApp()));
@@ -16,7 +27,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'BMI Calculator',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: mainBlue,
+        fontFamily: 'Poppins',
       ),
       home: InputPage(),
     );
